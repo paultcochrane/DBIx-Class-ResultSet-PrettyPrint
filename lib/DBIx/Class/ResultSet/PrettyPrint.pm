@@ -4,6 +4,10 @@ use 5.010;
 use strict;
 use warnings;
 
+use Moose;
+use Text::Table::Tiny qw(generate_table);
+
+
 =head1 NAME
 
 DBIx::Class::ResultSet::PrettyPrint - Pretty print DBIx::Class result sets.
@@ -49,9 +53,27 @@ that would be nice as a module.  And so here it is.
 
 =head1 SUBROUTINES/METHODS
 
-=head2 print_table( $result_set )
+=head2 C<print_table( $result_set )>
 
 Print the "table" from the given result set.
+
+=cut
+
+use Data::Dumper;
+
+sub print_table {
+    my ($self, $result_set) = @_;
+
+    my @columns = $result_set->result_source->columns;
+
+    my @rows = ( \@columns );
+    while ( my $row = $result_set->next ) {
+        my @data = map { $row->get_column($_) } @columns;
+        push @rows, \@data;
+    }
+
+    print generate_table( rows => \@rows, header_row => 1 ), "\n";
+}
 
 =head1 ACKNOWLEDGEMENTS
 
