@@ -14,7 +14,6 @@ use_ok('TestDB');
 
 my $schema = TestDB->init();
 
-# my $schema  = Schema->connect('dbi:SQLite:t/books.db');
 my $books   = $schema->resultset('Book');
 my @columns = $books->result_source->columns;
 
