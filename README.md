@@ -1,3 +1,5 @@
+[![ci](https://github.com/paultcochrane/DBIx-Class-ResultSet-PrettyPrint/actions/workflows/ci.yml/badge.svg)](https://github.com/paultcochrane/DBIx-Class-ResultSet-PrettyPrint/actions/workflows/ci.yml)
+
 # DBIx-Class-ResultSet-PrettyPrint - pretty print DBIC result sets
 
 This is a very simple module to pretty print [DBIx::Class::ResultSet
