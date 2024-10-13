@@ -17,7 +17,6 @@ my %WriteMakefileArgs = (
         'Test::More' => '0',
     },
     PREREQ_PM => {
-        'List::MoreUtils'   => '0',
         'Text::Table::Tiny' => '0',
         'DBIx::Class'       => '0',
         'SQL::Translator'   => '0.11018',

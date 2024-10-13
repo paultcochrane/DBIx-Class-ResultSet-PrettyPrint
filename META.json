@@ -33,7 +33,6 @@
       "runtime" : {
          "requires" : {
             "DBIx::Class" : "0",
-            "List::MoreUtils" : "0",
             "SQL::Translator" : "0.11018",
             "Text::Table::Tiny" : "0",
             "perl" : "5.010"
