@@ -4,7 +4,7 @@ use 5.010;
 use strict;
 use warnings;
 
-use Moose;
+use Moo;
 use Text::Table::Tiny qw(generate_table);
 
 
