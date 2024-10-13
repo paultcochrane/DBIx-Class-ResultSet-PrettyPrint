@@ -3,6 +3,7 @@ abstract: 'Pretty print DBIx ResultSets.'
 author:
   - 'Paul Cochrane <paul@peateasea.de>'
 build_requires:
+  Capture::Tiny: '0'
   ExtUtils::MakeMaker: '0'
   Test::More: '0'
 configure_requires:
