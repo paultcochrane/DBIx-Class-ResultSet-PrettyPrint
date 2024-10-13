@@ -53,6 +53,10 @@ that would be nice as a module.  And so here it is.
 
 =head1 SUBROUTINES/METHODS
 
+=head2 C<new()>
+
+Constructor; creates a new pretty printer object.
+
 =head2 C<print_table( $result_set )>
 
 Print the "table" from the given result set.
