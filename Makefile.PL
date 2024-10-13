@@ -22,6 +22,16 @@ my %WriteMakefileArgs = (
         'DBIx::Class'       => '0',
         'SQL::Translator'   => '0.11018',
     },
+    META_MERGE        => {
+        "meta-spec" => { version => 2 },
+        resources => {
+            repository => {
+                type => 'git',
+                url => 'git@github.com:paultcochrane/DBIx-Class-ResultSet-PrettyPrint.git',
+                web => 'https://github.com/paultcochrane/DBIx-Class-ResultSet-PrettyPrint',
+            },
+        },
+    },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'DBIx-Class-ResultSet-PrettyPrint-*' },
 );
