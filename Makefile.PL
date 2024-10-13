@@ -20,6 +20,7 @@ my %WriteMakefileArgs = (
         'List::MoreUtils'   => '0',
         'Text::Table::Tiny' => '0',
         'DBIx::Class'       => '0',
+        'SQL::Translator'   => '0.11018',
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'DBIx-Class-ResultSet-PrettyPrint-*' },
