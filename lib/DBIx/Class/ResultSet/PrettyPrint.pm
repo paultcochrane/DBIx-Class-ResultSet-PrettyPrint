@@ -92,7 +92,7 @@ Paul Cochrane, C<< <paul at peateasea.de> >>
 =head1 BUGS
 
 Please report any bugs or feature requests via the project's GitHub
-repositry at
+repository at
 L<https://github.com/paultcochrane/DBIx-Class-ResultSet-PrettyPrint>.
 
 =head1 SUPPORT
