@@ -1,3 +1,6 @@
 ~$
 \.swp$
 \.db$
+\.gitignore$
+\.git/
+\.github/workflows/ci.yml
