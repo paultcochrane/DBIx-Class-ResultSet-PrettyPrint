@@ -23,6 +23,6 @@ requires:
   List::MoreUtils: '0'
   SQL::Translator: '0.11018'
   Text::Table::Tiny: '0'
-  perl: '5.006'
+  perl: '5.010'
 version: '0.01'
 x_serialization_backend: 'CPAN::Meta::YAML version 0.018'

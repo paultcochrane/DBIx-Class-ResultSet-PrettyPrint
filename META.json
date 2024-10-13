@@ -36,7 +36,7 @@
             "List::MoreUtils" : "0",
             "SQL::Translator" : "0.11018",
             "Text::Table::Tiny" : "0",
-            "perl" : "5.006"
+            "perl" : "5.010"
          }
       },
       "test" : {

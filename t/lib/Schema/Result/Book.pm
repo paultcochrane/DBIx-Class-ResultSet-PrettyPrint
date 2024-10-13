@@ -4,6 +4,7 @@ package  # hide from PAUSE
 # the trick to hide this tests-only package was copied from
 # https://github.com/davidolrik/DBIx-Class-FormTools
 
+use 5.010;
 use strict;
 use warnings;
 
