@@ -53,6 +53,12 @@ that would be nice as a module.  And so here it is.
 
 Print the "table" from the given result set.
 
+=head1 ACKNOWLEDGEMENTS
+
+I borrowed heavily upon the test structure used in
+L<https://github.com/davidolrik/DBIx-Class-FormTools> for the test database
+setup and creation.
+
 =head1 AUTHOR
 
 Paul Cochrane, C<< <paul at peateasea.de> >>
