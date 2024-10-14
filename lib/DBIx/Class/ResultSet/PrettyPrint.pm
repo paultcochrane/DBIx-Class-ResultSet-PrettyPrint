@@ -75,6 +75,8 @@ sub print_table {
     }
 
     print generate_table( rows => \@rows, header_row => 1 ), "\n";
+
+    return;  # Explicitly returning nothing meaningful
 }
 
 =head1 ACKNOWLEDGEMENTS
