@@ -4,3 +4,4 @@
 \.gitignore$
 \.git/
 \.github/workflows/ci.yml
+DBIx-Class-ResultSet-PrettyPrint-.*\.tar\.gz
