@@ -16,6 +16,9 @@ my $tcm_ok = can_load(
     },
     autoload => 1,
 );
-plan skip_all => "Test::CheckManifest $min_tcm required" unless $tcm_ok;
+
+if (!$tcm_ok) {
+    plan skip_all => "Test::CheckManifest $min_tcm required";
+}
 
 ok_manifest();

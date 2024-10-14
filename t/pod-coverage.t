@@ -17,8 +17,10 @@ my $tpc_ok = can_load(
     },
     autoload => 1,
 );
-plan skip_all => "Test::Pod::Coverage $min_tpc required for testing POD coverage"
-    unless $tpc_ok;
+
+if (!$tpc_ok) {
+    plan skip_all => "Test::Pod::Coverage $min_tpc required for testing POD coverage";
+}
 
 # Test::Pod::Coverage doesn't require a minimum Pod::Coverage version,
 # but older versions don't recognize some common documentation styles
@@ -29,7 +31,9 @@ my $pc_ok = can_load(
     },
     autoload => 1,
 );
-plan skip_all => "Pod::Coverage $min_pc required for testing POD coverage"
-    unless $pc_ok;
+
+if (!$pc_ok) {
+    plan skip_all => "Pod::Coverage $min_pc required for testing POD coverage";
+}
 
 all_pod_coverage_ok();

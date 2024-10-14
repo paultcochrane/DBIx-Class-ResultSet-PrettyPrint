@@ -17,6 +17,9 @@ my $tp_ok = can_load(
     },
     autoload => 1,
 );
-plan skip_all => "Test::Pod $min_tp required for testing POD" unless $tp_ok;
+
+if (!$tp_ok) {
+    plan skip_all => "Test::Pod $min_tp required for testing POD";
+}
 
 all_pod_files_ok();
