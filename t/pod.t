@@ -3,6 +3,7 @@ use 5.010;
 use strict;
 use warnings;
 use Test::More;
+use Module::Load::Conditional qw( can_load );
 
 unless ( $ENV{RELEASE_TESTING} ) {
     plan( skip_all => "Author tests not required for installation" );
@@ -10,7 +11,12 @@ unless ( $ENV{RELEASE_TESTING} ) {
 
 # Ensure a recent version of Test::Pod
 my $min_tp = 1.22;
-eval "use Test::Pod $min_tp";
-plan skip_all => "Test::Pod $min_tp required for testing POD" if $@;
+my $tp_ok = can_load(
+    modules => {
+        'Test::Pod' => $min_tp,
+    },
+    autoload => 1,
+);
+plan skip_all => "Test::Pod $min_tp required for testing POD" unless $tp_ok;
 
 all_pod_files_ok();
