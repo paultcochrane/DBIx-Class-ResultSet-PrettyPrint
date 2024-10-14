@@ -3,7 +3,7 @@ use 5.010;
 use strict;
 use warnings;
 
-use Test::More;
+use Test::More import => [ qw( is is_deeply plan use_ok ) ];
 
 use lib './t/lib';
 

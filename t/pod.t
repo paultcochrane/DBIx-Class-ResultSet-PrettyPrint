@@ -2,7 +2,7 @@
 use 5.010;
 use strict;
 use warnings;
-use Test::More;
+use Test::More import => [ qw( plan ) ];
 use Module::Load::Conditional qw( can_load );
 
 unless ( $ENV{RELEASE_TESTING} ) {

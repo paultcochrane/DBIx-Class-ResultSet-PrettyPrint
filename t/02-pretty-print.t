@@ -3,8 +3,8 @@ use 5.010;
 use strict;
 use warnings;
 
-use Test::More;
-use Capture::Tiny qw(capture);
+use Test::More import => [ qw( is plan use_ok ) ];
+use Capture::Tiny qw( capture );
 
 use lib './t/lib';
 

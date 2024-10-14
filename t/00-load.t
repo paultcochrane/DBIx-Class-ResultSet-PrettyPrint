@@ -2,7 +2,7 @@
 use 5.010;
 use strict;
 use warnings;
-use Test::More;
+use Test::More import => [ qw( diag plan use_ok ) ];
 
 plan tests => 1;
 
