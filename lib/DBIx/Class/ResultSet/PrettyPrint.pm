@@ -5,7 +5,7 @@ use strict;
 use warnings;
 
 use Moo;
-use Text::Table::Tiny qw(generate_table);
+use Text::Table::Tiny qw( generate_table );
 
 
 =head1 NAME
@@ -62,8 +62,6 @@ Constructor; creates a new pretty printer object.
 Print the "table" from the given result set.
 
 =cut
-
-use Data::Dumper;
 
 sub print_table {
     my ($self, $result_set) = @_;
