@@ -16,11 +16,11 @@ my %WriteMakefileArgs = (
     TEST_REQUIRES => {
         'Test::More'    => '0',
         'Capture::Tiny' => '0',
+        'SQL::Translator'   => '0.11018',
       },
     PREREQ_PM => {
         'Text::Table::Tiny' => '0',
         'DBIx::Class'       => '0',
-        'SQL::Translator'   => '0.11018',
     },
     META_MERGE        => {
         "meta-spec" => { version => 2 },
