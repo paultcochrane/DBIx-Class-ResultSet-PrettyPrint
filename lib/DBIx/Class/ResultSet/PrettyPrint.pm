@@ -51,6 +51,10 @@ While searching for such a solution, I stumbled across L<an answer on
 StackOverflow|https://stackoverflow.com/a/4072923/10874800> and thought:
 that would be nice as a module.  And so here it is.
 
+Note that this module currently only works for C<ResultSet>s representing
+entire tables.  Handling more complex C<ResultSet>s (say from `join`s or
+similar) should theoretically be possible but has not yet been implemented.
+
 =head1 SUBROUTINES/METHODS
 
 =head2 C<new()>
