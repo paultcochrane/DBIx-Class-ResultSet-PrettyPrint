@@ -14,9 +14,9 @@ my %WriteMakefileArgs = (
         'ExtUtils::MakeMaker' => '0',
     },
     TEST_REQUIRES => {
-        'Test::More'    => '0',
-        'Capture::Tiny' => '0',
-        'SQL::Translator'   => '0.11018',
+        'Test::More'      => '0',
+        'Capture::Tiny'   => '0',
+        'SQL::Translator' => '0.11018',
       },
     PREREQ_PM => {
         'DBIx::Class'       => '0',
