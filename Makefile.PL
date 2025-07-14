@@ -20,6 +20,7 @@ my %WriteMakefileArgs = (
       },
     PREREQ_PM => {
         'DBIx::Class'       => '0',
+        'Moo'               => '0',
         'Text::Table::Tiny' => '0',
     },
     META_MERGE        => {
