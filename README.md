@@ -38,6 +38,10 @@ While searching for such a solution, I stumbled across [an answer on
 StackOverflow](https://stackoverflow.com/a/4072923/10874800) and thought:
 that would be nice as a module.  And so here it is.
 
+Note that this module currently only works for `ResultSet`s representing
+entire tables.  Handling more complex `ResultSet`s (say from `join`s or
+similar) should theoretically be possible but has not yet been implemented.
+
 ## INSTALLATION
 
 To install this module, run the following commands:
